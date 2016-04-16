@@ -1,0 +1,20 @@
+#This is a describe for the ServiceTest.java file.
+In the file,there is a main loop to waiting for the
+input from terminal user.Following is the rule:
+
+>login:username:userpassword  :'login' is the key word,represent login
+operation;'username' is 
+the user's name who has registered,the 'userpassword' is it's password
+
+>reg:username:userpassword   :'reg' is the key word,represent register
+operation,others as same as last commond.
+
+>ver:shi :the 'ver' is key word;;the 'shi' represent the 6-decimalism.
+
+>resetSed   :Again synchronise the sed between server and client
+
+>exit     :user exit server
+
+>quit     :quit the main loop
+
+
