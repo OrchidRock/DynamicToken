@@ -1,9 +1,9 @@
 #Description
 This project is a simuation for the dynamic shibboleth of
-the modern oline Bank.
+the modern online Bank.
 
 This project creating by java language,it has three packages:
-client,service,shibbolth
+client,service,shibbolth.
 
 #client
 this package's classes simuate the token,it will show a shibboleth(etc.123456)
@@ -14,17 +14,22 @@ this pacage's classes simute the server of Bank.
 
 #shibboleth
 this pacage's classes is a tool-set for other pacage.It includes 
-PRNG(pseudo-random number generation) class
+PRNG(pseudo-random number generation) class.
 
 #Algorithm
 The client and service use the same algorithm(PRNG) to get a same sed(128 bits)
 when they startup within same minute.
-The shibboleth create algorithm is [hash(sed+time)] 'hash' is MD5,
+The shibboleth create algorithm is F[hash(sed+time)] 'hash' is MD5,the
+F function map the 128bits MD5-hash-value to a 6-decimalism.
+
+#users.dtd
+the server always save the user data to the .xml file.It include the user's name,password(hash value after add 32bits salt).The users.dtd filr defination the DTD of .xml file.
 
 #author
-Rock China ChongQing CQU.
+Rock CQU ChongQing China. 
 rocksevencolor@gmail.com
 
+#Date
 2016.4.16
 
-
+Thanks.
